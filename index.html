@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <div class="calc">
+    <div class="header">
+      <div class="name">calc</div>
+        <div class="right">
+          <div class="tname">THEME</div>
+            <div class="themes">
+                <div class="tag">
+                    <p id="one">1</p>
+                    <p id="two">2</p>
+                    <p id="three">3</p>
+                </div>
+                <div class="bar">
+                    <div id="circle"></div>
+                </div>
+             </div>
+        </div>   
+    </div>
+    <div class="display"><input id="display" type="text" readonly></div>
+     <div class="key-pad">
+      <div class="keys">
+        <button id="btn" onclick="clicktoshow('7')">7</button>
+        <button id="btn" onclick="clicktoshow('8')">8</button>
+        <button id="btn" onclick="clicktoshow('9')">9</button>
+        <button id="d-btn" onclick="del('')">DEL</button>
+        <button id="btn" onclick="clicktoshow('4')">4</button>
+        <button id="btn" onclick="clicktoshow('5')">5</button>
+        <button id="btn" onclick="clicktoshow('6')">6</button>
+        <button id="btn" onclick="clicktoshow('+')">+</button>
+        <button id="btn" onclick="clicktoshow('1')">1</button>
+        <button id="btn" onclick="clicktoshow('2')">2</button>
+        <button id="btn" onclick="clicktoshow('3')">3</button>
+        <button id="btn" onclick="clicktoshow('-')">-</button>
+        <button id="btn" onclick="clicktoshow('.')">.</button>
+        <button id="btn" onclick="clicktoshow('0')">0</button>
+        <button id="btn" onclick="clicktoshow('/')">/</button>
+        <button id="btn" onclick="clicktoshow('*')">x</button>
+      </div>
+     <div class="long-keys">
+        <button id="l-btn" onclick="reset()">RESET</button>
+        <button id="r-btn" onclick="calcute()">=</button>
+      </div>
+      <script src="index.js"></script>
+    </div>
+  </div>
+
+</body>
+
+</html>

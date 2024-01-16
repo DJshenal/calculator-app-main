@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body{
+    background-color:hsl(222, 26%, 31%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'League Spartan' ,sans-serif;
+    font-weight: 700;
+   
+}
+
+.header{
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.right{
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tname{
+  padding-top: 30px;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: x-small;
+    
+}
+
+.tag{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: x-small;
+    
+}
+
+.tag >p{
+
+    cursor: pointer;
+    position: relative;
+}
+.bar{
+    height: 15px;
+    width: 50px;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+#circle{
+    height: 15px;
+    width: 15px;
+    background-color: hsl(6, 63%, 50%);
+    position: absolute;
+    border-radius: 20px;
+    z-index: 1;
+    cursor: pointer;
+    top: 0%;
+    left: 0%;
+}
+.display{
+   
+    margin: 20px 0px 20px 0px;
+}
+
+#display{
+    height: 70px;
+    width: 360px;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: 'League Spartan' ,sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.key-pad{
+     padding: 20px;
+     border-radius: 10px;
+     background-color: hsl(223, 31%, 20%);
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap:3vh;
+    column-gap: 3vh;
+    
+   
+}
+
+#btn,#l-btn,#r-btn,#d-btn{
+    height: 50px;
+    width: 70px;
+    background-color:  hsl(30, 25%, 89%);
+    border-radius: 5px;
+    border: none;
+    font-family: 'League Spartan' ,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 0px 3px 0px hsl(28, 16%, 65%);
+}
+
+#l-btn{
+    width: 165px;
+    color: white;
+    background-color:   hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 0px hsl(224, 28%, 35%);
+   
+}
+#r-btn{
+    width: 165px;
+    color: white;
+    background-color:  hsl(6, 63%, 50%);
+    box-shadow: 0px 3px 0px hsl(6, 70%, 34%);
+  
+}
+
+#d-btn{
+    color: white;
+    background-color:   hsl(225, 21%, 49%);
+    box-shadow: 0px 3px 0px hsl(224, 28%, 35%);
+}
+.long-keys{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#circle:hover{
+    background-color:  hsla(6, 100%, 70%, 0.94);
+}
+#btn:hover{
+    background-color: white;
+}
+
+#r-btn:hover{
+    background-color:  hsla(6, 100%, 70%, 0.94);
+}
+
+#l-btn:hover{
+    background-color: hsla(225, 33%, 66%, 0.94);
+}
+
+#d-btn:hover {
+    background-color: hsla(225, 33%, 76%, 0.94);
+}
+
+
+
+/* _________________________THEME 2________________________ */
+
+body.active2{
+    background-color: hsl(0, 0%, 90%);
+}
+.active2 .header{
+    color: black;
+}
+.active2 #display{
+    color: black;
+    background-color: hsl(0, 0%, 93%);
+}
+
+.active2 .bar{
+    background-color: hsl(0, 5%, 81%);
+}
+.active2 .key-pad{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.active2 #btn{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 3px 0px hsl(35, 11%, 61%);
+}
+.active2  #d-btn{
+    background-color: hsl(185, 42%, 37%) ;
+    box-shadow: 0px 3px 0px hsl(185, 58%, 25%);
+}
+.active2 #l-btn {
+    background-color: hsl(185, 42%, 37%) ;
+    box-shadow: 0px 3px 0px hsl(185, 58%, 25%);
+}
+.active2 #r-btn{
+    background-color:hsl(25, 98%, 40%) ;
+    box-shadow: 0px 3px 0px hsl(25, 99%, 27%);
+}
+.active2 #btn:hover{
+    background-color: white;
+}
+.active2 #d-btn:hover{
+    background-color: hsl(185, 63%, 54%) ;
+}
+.active2 #l-btn:hover{
+    background-color: hsl(185, 63%, 54%) ;
+}
+.active2 #r-btn:hover{
+    background-color: hsl(6, 100%, 69%);
+}
+
+
+/* _________________________THEME 3________________________ */
+body.active3{
+  
+    background-color: hsl(268, 75%, 9%);
+}
+.active3 .header{
+    color:hsl(52, 100%, 62%);
+}
+.active3 #display{
+    color:hsl(52, 100%, 62%);
+    background-color:  hsl(268, 71%, 12%);
+}
+
+.active3 .bar{
+    background-color:  hsl(268, 71%, 12%);
+}
+.active3 #circle{
+    background-color: hsl(176, 100%, 44%);
+}
+.active3 .key-pad{
+    
+    background-color: hsl(268, 71%, 12%);
+}
+
+.active3 #btn{
+    color:hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 3px 0px hsl(290, 70%, 36%);
+}
+.active3  #d-btn{
+    background-color: hsl(281, 89%, 26%) ;
+    box-shadow: 0px 3px 0px hsl(285, 91%, 52%);
+}
+.active3 #l-btn {
+    background-color: hsl(281, 89%, 26%) ;
+    box-shadow: 0px 3px 0px hsl(285, 91%, 52%);
+}
+.active3 #r-btn{
+    color:black;
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 3px 0px hsl(177, 92%, 70%);
+}
+.active3 #circle:hover{
+    background-color: hsl(176, 100%, 60%);
+}
+.active3 #btn:hover{
+    background-color: hsla(268, 60%, 44%, 0.94);
+}
+.active3 #d-btn:hover{
+    background-color: rgb(127, 28, 173) ;
+}
+.active3 #l-btn:hover{
+    background-color: rgb(127, 28, 173) ;
+}
+
+.active3 #r-btn:hover{
+    color:black;
+    background-color: hsl(176, 100%, 60%);
+}
+
+@media all and (max-width:400px) {
+    #display{
+        width: 320px;
+    }
+    .keys{
+        gap:3vh;
+    }
+  
+    #btn,#l-btn,#r-btn,#d-btn{
+        height: 40px;
+        width: 60px;
+    }
+    #r-btn{
+        width: 150px;
+    }
+    #l-btn{
+        width: 150px;
+    }
+}
